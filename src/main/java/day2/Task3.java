@@ -5,20 +5,17 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число а");
         int a = scanner.nextInt();
-        System.out.println("Введите число b");
         int b = scanner.nextInt();
-        if (a >= b || a < 0) {
+        if (a >= b) {
             System.out.println("Некорректный ввод");
         }
-        int c = 0;
+        int c = a + 1;
 
         while (c < b) {
-            if (c % 5 == 0)
-                if (c % 10 != 0) {
-                    System.out.println(c + " ");
-                }
+            if (c % 5 == 0 && c % 10 != 0) {
+                System.out.print(c + " ");
+            }
             c = c + 1;
         }
 
