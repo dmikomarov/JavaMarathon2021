@@ -12,9 +12,9 @@ public class Task1 {
         int[] y = new int[x];
         int bolshevosmi = 0;
         int ravnoedinice = 0;
-        int counter2 = 0;
-        int counter3 = 0;
-        int counter4 = 0;
+        int chentie = 0;
+        int nechetnie = 0;
+        int sum = 0;
         for (int i = 0; i < y.length; i++) {
             y[i] = random.nextInt(11);
             if (y[i] > 8)
@@ -22,17 +22,17 @@ public class Task1 {
             if (y[i] == 1)
                 ravnoedinice++;
             if (y[i] % 2 == 0)
-                counter2++;
+                chentie++;
             else
-                counter3++;
-            counter4 += y[i];
+                nechetnie++;
+            sum += y[i];
         }
         System.out.println(Arrays.toString(y));
         System.out.println("Больше восьми" + " " + bolshevosmi);
         System.out.println("Равно единице" + " " + ravnoedinice);
-        System.out.println("Четные числа" + " " + counter2);
-        System.out.println("Нечетные числа" + " " + counter3);
-        System.out.println("Сумма" + " " + counter4);
+        System.out.println("Четные числа" + " " + chentie);
+        System.out.println("Нечетные числа" + " " + nechetnie);
+        System.out.println("Сумма" + " " + sum);
 
 
     }

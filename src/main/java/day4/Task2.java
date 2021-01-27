@@ -9,8 +9,8 @@ public class Task2 {
         Random random = new Random();
         for (int i = 0; i < array.length; i++)
             array[i] = random.nextInt(10000);
-        int max = 0;
-        int min = 10000;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
         int counter = 0;
         int sum = 0;
         for (int element : array) {
@@ -20,8 +20,7 @@ public class Task2 {
                 min = element;
             if (element % 10 == 0)
                 counter++;
-            if (element % 10 == 0)
-                sum += element;
+            sum += element;
         }
         System.out.println(Arrays.toString(array));
         System.out.println(max);
