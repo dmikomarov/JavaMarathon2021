@@ -23,7 +23,7 @@ public class Task1 {
                 ravnoedinice++;
             if (y[i] % 2 == 0)
                 counter2++;
-            if (y[i] % 2 != 0)
+            else
                 counter3++;
             counter4 += y[i];
         }
